@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Mail, Lock, EyeOff, Eye } from "lucide-react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router-dom";
-import { toast} from "react-toastify";
+import { toast } from "react-toastify";
 import { postRequest } from "../axios";
 
 const Login = () => {
@@ -30,7 +30,7 @@ const Login = () => {
     }
 
     try {
-      const response = await postRequest("http://localhost:5000/api/users/login", {
+      const response = await postRequest("/api/users/login", {
         email,
         password,
       });
@@ -58,7 +58,9 @@ const Login = () => {
             alt="Logo"
             style={{ width: "180px" }}
           />
-          <p className="text-gray-500 text-sm md:text-base">Sign in to continue</p>
+          <p className="text-gray-500 text-sm md:text-base">
+            Sign in to continue
+          </p>
         </div>
 
         {/* Google Sign-In Button */}
@@ -79,7 +81,10 @@ const Login = () => {
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Email Input */}
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
               Email Address
             </label>
             <div className="relative mt-1">
@@ -92,13 +97,19 @@ const Login = () => {
                 placeholder="Enter your email"
                 required
               />
-              <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+              <Mail
+                className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                size={20}
+              />
             </div>
           </div>
 
           {/* Password Input */}
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-700"
+            >
               Password
             </label>
             <div className="relative mt-1">
@@ -111,7 +122,10 @@ const Login = () => {
                 placeholder="Enter your password"
                 required
               />
-              <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+              <Lock
+                className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"
+                size={20}
+              />
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
@@ -125,13 +139,18 @@ const Login = () => {
           {/* Remember Me & Forgot Password */}
           <div className="flex items-center justify-between">
             <label className="flex items-center text-sm">
-              <input type="checkbox" className="h-4 w-4 text-blue-600 focus:ring-blue-700 border-gray-300 rounded" />
+              <input
+                type="checkbox"
+                className="h-4 w-4 text-blue-600 focus:ring-blue-700 border-gray-300 rounded"
+              />
               <span className="ml-2 text-gray-900">Remember me</span>
             </label>
 
             <button
               type="button"
-              onClick={() => toast.error("This Feature is Not Implemented Yet!")}
+              onClick={() =>
+                toast.error("This Feature is Not Implemented Yet!")
+              }
               className="text-blue-700 hover:text-blue-500 text-sm focus:outline-none"
             >
               Forgot password?
@@ -151,7 +170,10 @@ const Login = () => {
         <div className="text-center">
           <p className="text-sm text-gray-600">
             Don't have an account?{" "}
-            <Link to="/Register" className="text-blue-700 hover:text-blue-500 font-medium">
+            <Link
+              to="/Register"
+              className="text-blue-700 hover:text-blue-500 font-medium"
+            >
               Register
             </Link>
           </p>

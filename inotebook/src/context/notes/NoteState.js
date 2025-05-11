@@ -1,16 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import noteContext from "./NoteContext";
 import { getRequest, postRequest, putRequest, deleteRequest } from "../../axios";
+import BASE_URL from "../../config"; // Import BASE_URL directly
 
 const NoteState = (props) => {
-  const host = "http://localhost:5000";
   const [notes, setNotes] = useState([]);
   const [deletedNotes, setDeletedNotes] = useState([]);
+
+  // Use the BASE_URL from config.js
+  const host = BASE_URL; // Use the dynamic URL
+
+  useEffect(() => {
+    // Fetch notes when component mounts
+    getNotes();
+    getDeletedNotes();
+  }, []);
 
   // GET all notes
   const getNotes = async () => {
     try {
-      const url = `${host}/api/notes/fetchAllNotes`;
+      const url = `/api/notes/fetchAllNotes`;
+      console.log(url)
       const fetchedNotes = await getRequest(url);
       setNotes(fetchedNotes);
     } catch (error) {
@@ -21,7 +31,7 @@ const NoteState = (props) => {
   // Add Note
   const addNote = async (title, description, tag) => {
     try {
-      const url = `${host}/api/notes/addNote`;
+      const url = `/api/notes/addNote`;
       const addedNote = await postRequest(url, { title, description, tag });
       setNotes([...notes, addedNote]);
     } catch (error) {
@@ -32,7 +42,7 @@ const NoteState = (props) => {
   // Delete Note
   const deleteNote = async (noteId) => {
     try {
-      const url = `${host}/api/notes/deleteNote/${noteId}`;
+      const url = `/api/notes/deleteNote/${noteId}`;
       await deleteRequest(url);
       setDeletedNotes((prevDeletedNotes) =>
         prevDeletedNotes.filter((note) => note._id !== noteId)
@@ -45,9 +55,9 @@ const NoteState = (props) => {
   // Edit/Update Note
   const updateNote = async (noteId, title, description, tag) => {
     try {
-      const url = `${host}/api/notes/updateNote/${noteId}`;
+      const url = `/api/notes/updateNote/${noteId}`;
       await putRequest(url, { title, description, tag });
-      
+
       setNotes((prevNotes) =>
         prevNotes.map((note) =>
           note._id === noteId ? { ...note, title, description, tag } : note
@@ -61,7 +71,7 @@ const NoteState = (props) => {
   // Move Note to Trash
   const moveNoteToTrash = async (noteId) => {
     try {
-      const url = `${host}/api/notes/moveNoteToTrash/${noteId}`;
+      const url = `/api/notes/moveNoteToTrash/${noteId}`;
       await putRequest(url);
       setNotes((prevNotes) => prevNotes.filter((note) => note._id !== noteId));
     } catch (error) {
@@ -72,7 +82,7 @@ const NoteState = (props) => {
   // Fetch All Deleted Notes
   const getDeletedNotes = async () => {
     try {
-      const url = `${host}/api/notes/fetchAllDeletedNotes`;
+      const url = `/api/notes/fetchAllDeletedNotes`;
       const fetchedDeletedNotes = await getRequest(url);
       setDeletedNotes(fetchedDeletedNotes);
     } catch (error) {
@@ -80,10 +90,9 @@ const NoteState = (props) => {
     }
   };
 
-  const restoreNote = async(noteId) =>{
+  const restoreNote = async (noteId) => {
     try {
-      
-      const url = `${host}/api/notes/restoreNote/${noteId}`;
+      const url = `/api/notes/restoreNote/${noteId}`;
       const data = await putRequest(url);
 
       setDeletedNotes(deletedNotes.filter((note) => note._id !== noteId));

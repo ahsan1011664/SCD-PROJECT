@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json())  
 
-const PORT = process.env.PORT;
+// const PORT = process.env.PORT;
 const mongoDbURI = process.env.MONGO_URI;
 
 app.use('/api/users', userRoutes);
@@ -24,6 +24,6 @@ catch((err)=>{
     console.log("Error: Unable to Connect to MongoDb.", err);
 })
 
-app.listen(PORT, () => {
-    console.log(`iNotebook running on port ${PORT}`);
+app.listen(5000,'0.0.0.0' ,() => {
+    console.log(`iNotebook running on port 5000`);
 });

@@ -43,7 +43,7 @@ const Register = () => {
     }
 
     try {
-      const response = await postRequest("http://localhost:5000/api/users/register", formData);
+      const response = await postRequest("/api/users/register", formData);
 
       if (response.message === "User Registered Successfully") {
         toast.success("Signup successful");

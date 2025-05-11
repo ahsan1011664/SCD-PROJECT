@@ -47,5 +47,9 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.5.2",
     "tailwindcss": "^4.0.6"
-  }
+  },
+  "description": "iNotebook is a secure and user-friendly note-taking web application that allows users to create, manage, and organize their notes efficiently. With a clean UI and powerful features, iNotebook ensures seamless note management across devices.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
