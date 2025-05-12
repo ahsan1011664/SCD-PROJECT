@@ -14,9 +14,9 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Set up Docker to use Minikube's environment
-      shell: bash
+      shell: powershell
       run: |
-        eval $(minikube docker-env)
+        & minikube -p minikube docker-env --shell=cmd | Invoke-Expression
 
     - name: Build frontend Docker image
       run: docker build -t aahs/frontend:latest ./inotebook
