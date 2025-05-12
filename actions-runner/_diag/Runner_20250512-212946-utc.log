@@ -1,0 +1,217 @@
+[2025-05-12 21:29:46Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-05-12 21:29:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 21:29:46Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials'
+[2025-05-12 21:29:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 21:29:46Z INFO HostContext] Well known config file 'Runner': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner'
+[2025-05-12 21:29:47Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-05-12 21:29:47Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.22000.
+[2025-05-12 21:29:47Z INFO Listener] Version: 2.323.0
+[2025-05-12 21:29:47Z INFO Listener] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-05-12 21:29:47Z INFO Listener] Culture: en-US
+[2025-05-12 21:29:47Z INFO Listener] UI Culture: en-US
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 21:29:47Z INFO Listener] Validating directory permissions for: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 21:29:47Z INFO CommandLineParser] Parse
+[2025-05-12 21:29:47Z INFO CommandLineParser] Parsing 1 args
+[2025-05-12 21:29:47Z INFO CommandLineParser] parsing argument
+[2025-05-12 21:29:47Z INFO CommandLineParser] HasArgs: False
+[2025-05-12 21:29:47Z INFO CommandLineParser] Adding Command: run
+[2025-05-12 21:29:47Z INFO Listener] Arguments parsed
+[2025-05-12 21:29:47Z INFO Runner] ExecuteCommand
+[2025-05-12 21:29:47Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin\Runner.Listener.dll
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:47Z INFO ConfigurationStore] binPath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 21:29:47Z INFO ConfigurationStore] RootFolder: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 21:29:47Z INFO HostContext] Well known config file 'Runner': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner'
+[2025-05-12 21:29:47Z INFO ConfigurationStore] ConfigFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 21:29:47Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner_migrated'
+[2025-05-12 21:29:47Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner_migrated
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 21:29:47Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials'
+[2025-05-12 21:29:47Z INFO ConfigurationStore] CredFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 21:29:47Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_migrated'
+[2025-05-12 21:29:47Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_migrated
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 21:29:47Z INFO HostContext] Well known config file 'Service': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.service'
+[2025-05-12 21:29:47Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.service
+[2025-05-12 21:29:47Z INFO CommandSettings] Flag 'help': 'False'
+[2025-05-12 21:29:47Z INFO CommandSettings] Flag 'version': 'False'
+[2025-05-12 21:29:47Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-05-12 21:29:47Z INFO CommandSettings] Flag 'check': 'False'
+[2025-05-12 21:29:47Z INFO CommandSettings] Command 'configure': 'False'
+[2025-05-12 21:29:47Z INFO CommandSettings] Command 'remove': 'False'
+[2025-05-12 21:29:47Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-05-12 21:29:47Z INFO ConfigurationManager] LoadSettings
+[2025-05-12 21:29:47Z INFO ConfigurationStore] IsConfigured()
+[2025-05-12 21:29:47Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-12 21:29:47Z INFO ConfigurationManager] Is configured: True
+[2025-05-12 21:29:47Z INFO ConfigurationStore] Read setting file: 313 chars
+[2025-05-12 21:29:47Z INFO ConfigurationManager] Settings Loaded
+[2025-05-12 21:29:47Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-05-12 21:29:47Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-05-12 21:29:47Z INFO CommandSettings] Command 'run': 'True'
+[2025-05-12 21:29:47Z INFO ConfigurationStore] IsConfigured()
+[2025-05-12 21:29:47Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-12 21:29:47Z INFO ConfigurationManager] Is configured: True
+[2025-05-12 21:29:47Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-05-12 21:29:47Z INFO Runner] Set runner startup type - Manual
+[2025-05-12 21:29:47Z INFO CommandSettings] Flag 'once': 'False'
+[2025-05-12 21:29:47Z INFO CommandSettings] Flag 'once': 'False'
+[2025-05-12 21:29:47Z INFO Runner] RunAsync
+[2025-05-12 21:29:47Z INFO ConfigurationManager] LoadSettings
+[2025-05-12 21:29:47Z INFO ConfigurationStore] IsConfigured()
+[2025-05-12 21:29:47Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-12 21:29:47Z INFO ConfigurationManager] Is configured: True
+[2025-05-12 21:29:47Z INFO ConfigurationManager] Settings Loaded
+[2025-05-12 21:29:47Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "DESKTOP-52ROIOA",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus8.actions.githubusercontent.com/QdIbUorw0iCzRRmejOnyK3PHf7VSu7tQu37g2h1LTM2mY51Jc4/",
+  "GitHubUrl": "https://github.com/ahsan1011664/SCD-PROJECT",
+  "WorkFolder": "_work"
+}
+[2025-05-12 21:29:47Z INFO MessageListener] Loading Credentials
+[2025-05-12 21:29:47Z INFO ConfigurationStore] HasCredentials()
+[2025-05-12 21:29:47Z INFO ConfigurationStore] stored True
+[2025-05-12 21:29:47Z INFO CredentialManager] GetCredentialProvider
+[2025-05-12 21:29:47Z INFO CredentialManager] Creating type OAuth
+[2025-05-12 21:29:47Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 21:29:47Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams'
+[2025-05-12 21:29:47Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 21:29:47Z INFO MessageListener] Attempt to create session.
+[2025-05-12 21:29:47Z INFO MessageListener] Connecting to the Runner Server...
+[2025-05-12 21:29:47Z INFO RunnerServer] EstablishVssConnection
+[2025-05-12 21:29:47Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-05-12 21:29:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-12 21:29:47Z INFO RunnerServer] EstablishVssConnection
+[2025-05-12 21:29:47Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-05-12 21:29:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-12 21:29:47Z INFO RunnerServer] EstablishVssConnection
+[2025-05-12 21:29:47Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-05-12 21:29:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-12 21:29:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-12 21:29:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-12 21:29:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-12 21:29:49Z INFO MessageListener] VssConnection created
+[2025-05-12 21:29:49Z INFO Terminal] WRITE LINE: 
+[2025-05-12 21:29:49Z INFO Terminal] WRITE LINE: 
+[2025-05-12 21:29:50Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 21:29:50Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 21:29:51Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-12 21:29:51Z INFO MessageListener] Session created.
+[2025-05-12 21:29:51Z INFO Terminal] WRITE LINE: Current runner version: '2.323.0'
+[2025-05-12 21:29:51Z INFO Terminal] WRITE LINE: 2025-05-12 21:29:51Z: Listening for Jobs
+[2025-05-12 21:29:51Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-05-12 21:29:52Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 21:29:53Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-12 21:29:54Z INFO MessageListener] Message '136758837812867378' received from session 'c52fcf97-6fdd-4c80-b876-d7a88b0fe1d5'.
+[2025-05-12 21:29:54Z INFO ConfigurationStore] HasCredentials()
+[2025-05-12 21:29:54Z INFO ConfigurationStore] stored True
+[2025-05-12 21:29:54Z INFO CredentialManager] GetCredentialProvider
+[2025-05-12 21:29:54Z INFO CredentialManager] Creating type OAuth
+[2025-05-12 21:29:54Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-12 21:29:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 21:29:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 21:29:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 21:29:56Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-12 21:29:57Z INFO JobDispatcher] Job request 0 for plan 14fe1bfa-67e5-43de-b9c2-a7e8b0e15e88 job bf5a057e-7111-59cb-a780-3b76e3f41503 received.
+[2025-05-12 21:29:57Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-12 21:29:57Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-12 21:29:57Z INFO Terminal] WRITE LINE: 2025-05-12 21:29:57Z: Running job: build-deploy
+[2025-05-12 21:29:57Z INFO JobDispatcher] Start renew job request 0 for job bf5a057e-7111-59cb-a780-3b76e3f41503.
+[2025-05-12 21:29:58Z INFO JobDispatcher] Successfully renew job bf5a057e-7111-59cb-a780-3b76e3f41503, job is valid till 5/12/2025 9:40:02 PM
+[2025-05-12 21:29:58Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin\Runner.Worker.exe'
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2216 2228'
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-12 21:29:58Z INFO ProcessInvokerWrapper] Process started with process id 22056, waiting for process exit.
+[2025-05-12 21:29:58Z INFO JobDispatcher] Send job request message to worker for job bf5a057e-7111-59cb-a780-3b76e3f41503.
+[2025-05-12 21:29:58Z INFO ProcessChannel] Sending message of length 20824, with hash '84c2e20187dcdb64b2e2f2f0f1021c095a80dc0a2359c0c8b30ca950ea23a535'
+[2025-05-12 21:30:00Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-12 21:30:00Z INFO JobNotification] Entering StartMonitor
+[2025-05-12 21:30:59Z INFO JobDispatcher] Successfully renew job bf5a057e-7111-59cb-a780-3b76e3f41503, job is valid till 5/12/2025 9:41:02 PM
+[2025-05-12 21:31:59Z INFO JobDispatcher] Successfully renew job bf5a057e-7111-59cb-a780-3b76e3f41503, job is valid till 5/12/2025 9:42:03 PM
+[2025-05-12 21:32:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 21:32:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 21:32:38Z INFO ProcessInvokerWrapper] Finished process 22056 with exit code 102, and elapsed time 00:02:39.7231560.
+[2025-05-12 21:32:38Z INFO JobDispatcher] Worker finished for job bf5a057e-7111-59cb-a780-3b76e3f41503. Code: 102
+[2025-05-12 21:32:38Z INFO JobDispatcher] finish job request for job bf5a057e-7111-59cb-a780-3b76e3f41503 with result: Failed
+[2025-05-12 21:32:38Z INFO Terminal] WRITE LINE: 2025-05-12 21:32:38Z: Job build-deploy completed with result: Failed
+[2025-05-12 21:32:38Z INFO JobDispatcher] Stop renew job request for job bf5a057e-7111-59cb-a780-3b76e3f41503.
+[2025-05-12 21:32:38Z INFO JobDispatcher] job renew has been cancelled, stop renew job bf5a057e-7111-59cb-a780-3b76e3f41503.
+[2025-05-12 21:32:38Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-12 21:32:38Z INFO JobNotification] Entering EndMonitor
+[2025-05-12 21:32:38Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-12 21:34:48Z INFO MessageListener] Message '4557379069611913464' received from session 'c52fcf97-6fdd-4c80-b876-d7a88b0fe1d5'.
+[2025-05-12 21:34:48Z INFO ConfigurationStore] HasCredentials()
+[2025-05-12 21:34:48Z INFO ConfigurationStore] stored True
+[2025-05-12 21:34:48Z INFO CredentialManager] GetCredentialProvider
+[2025-05-12 21:34:48Z INFO CredentialManager] Creating type OAuth
+[2025-05-12 21:34:48Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-12 21:34:48Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 21:34:48Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 21:34:48Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 21:34:50Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-12 21:34:51Z INFO JobDispatcher] Job request 0 for plan a088fecf-e524-4cc2-a995-876263d63a84 job 423a6a65-d887-5ee4-a451-84ac35fe5052 received.
+[2025-05-12 21:34:51Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-12 21:34:51Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-12 21:34:51Z INFO JobDispatcher] Job request bf5a057e-7111-59cb-a780-3b76e3f41503 processed succeed.
+[2025-05-12 21:34:51Z INFO Terminal] WRITE LINE: 2025-05-12 21:34:51Z: Running job: build-deploy
+[2025-05-12 21:34:51Z INFO JobDispatcher] Start renew job request 0 for job 423a6a65-d887-5ee4-a451-84ac35fe5052.
+[2025-05-12 21:34:52Z INFO JobDispatcher] Successfully renew job 423a6a65-d887-5ee4-a451-84ac35fe5052, job is valid till 5/12/2025 9:44:56 PM
+[2025-05-12 21:34:52Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin\Runner.Worker.exe'
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2300 1924'
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-12 21:34:52Z INFO ProcessInvokerWrapper] Process started with process id 16264, waiting for process exit.
+[2025-05-12 21:34:52Z INFO JobDispatcher] Send job request message to worker for job 423a6a65-d887-5ee4-a451-84ac35fe5052.
+[2025-05-12 21:34:52Z INFO ProcessChannel] Sending message of length 20834, with hash '6cfa9048d5a0ed665db511eb71e4d49708f8e9221397c5b3c4d139e63c36c8fc'
+[2025-05-12 21:34:54Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-12 21:34:54Z INFO JobNotification] Entering StartMonitor
+[2025-05-12 21:35:52Z INFO JobDispatcher] Successfully renew job 423a6a65-d887-5ee4-a451-84ac35fe5052, job is valid till 5/12/2025 9:45:56 PM
+[2025-05-12 21:36:53Z INFO JobDispatcher] Successfully renew job 423a6a65-d887-5ee4-a451-84ac35fe5052, job is valid till 5/12/2025 9:46:57 PM
+[2025-05-12 21:37:53Z INFO JobDispatcher] Successfully renew job 423a6a65-d887-5ee4-a451-84ac35fe5052, job is valid till 5/12/2025 9:47:57 PM
+[2025-05-12 21:38:18Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 21:38:18Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 21:38:18Z INFO ProcessInvokerWrapper] Finished process 16264 with exit code 102, and elapsed time 00:03:26.5058896.
+[2025-05-12 21:38:18Z INFO JobDispatcher] Worker finished for job 423a6a65-d887-5ee4-a451-84ac35fe5052. Code: 102
+[2025-05-12 21:38:18Z INFO JobDispatcher] finish job request for job 423a6a65-d887-5ee4-a451-84ac35fe5052 with result: Failed
+[2025-05-12 21:38:18Z INFO Terminal] WRITE LINE: 2025-05-12 21:38:18Z: Job build-deploy completed with result: Failed
+[2025-05-12 21:38:18Z INFO JobDispatcher] Stop renew job request for job 423a6a65-d887-5ee4-a451-84ac35fe5052.
+[2025-05-12 21:38:18Z INFO JobDispatcher] job renew has been cancelled, stop renew job 423a6a65-d887-5ee4-a451-84ac35fe5052.
+[2025-05-12 21:38:18Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-12 21:38:18Z INFO JobNotification] Entering EndMonitor
+[2025-05-12 21:38:19Z INFO MessageListener] Received job status event. JobState: Online
