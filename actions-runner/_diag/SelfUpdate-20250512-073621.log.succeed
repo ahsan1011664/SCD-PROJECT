@@ -1,0 +1,18 @@
+[Mon 05/12/2025 12:36:24.55] --------whoami-------- 
+desktop-52roioa\gj
+[Mon 05/12/2025 12:36:25.22] --------whoami-------- 
+[Mon 05/12/2025 12:36:25.23] Waiting for Runner.Listener.exe (18484) to complete 
+[Mon 05/12/2025 12:36:28.39] Process 18484 finished running 
+[Mon 05/12/2025 12:36:28.44] Sleep 1 more second to make sure process exited 
+[Mon 05/12/2025 12:36:29.52] Re-organize folders 
+[Mon 05/12/2025 12:36:29.97] move "C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin" "C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin.2.311.0" 
+        1 dir(s) moved.
+[Mon 05/12/2025 12:36:30.23] move "C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals" "C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals.2.311.0" 
+        1 dir(s) moved.
+[Mon 05/12/2025 12:36:30.50] Create junction bin folder 
+Junction created for C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin <<===>> C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin.2.323.0
+[Mon 05/12/2025 12:36:30.62] Create junction externals folder 
+Junction created for C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals <<===>> C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals.2.323.0
+[Mon 05/12/2025 12:36:30.68] Update succeed 
+[Mon 05/12/2025 12:36:30.72] update.finished file creation succeed 
+[Mon 05/12/2025 12:36:30.77] Rename "C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag\SelfUpdate-20250512-073621.log" to be "C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag\SelfUpdate-20250512-073621.log.succeed" 

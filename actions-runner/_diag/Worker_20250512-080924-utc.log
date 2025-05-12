@@ -1,0 +1,3208 @@
+[2025-05-12 08:09:24Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-05-12 08:09:24Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:24Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:24Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials'
+[2025-05-12 08:09:24Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:24Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:24Z INFO HostContext] Well known config file 'Runner': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner'
+[2025-05-12 08:09:24Z INFO Worker] Version: 2.323.0
+[2025-05-12 08:09:24Z INFO Worker] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-05-12 08:09:24Z INFO Worker] Culture: en-US
+[2025-05-12 08:09:24Z INFO Worker] UI Culture: en-US
+[2025-05-12 08:09:24Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-05-12 08:09:25Z INFO ProcessChannel] Receiving message of length 20813, with hash '25eba4322bdbf6e3b8c336c0a34038e73f685720698d192cb6e1d68057ad8cc3'
+[2025-05-12 08:09:25Z INFO Worker] Message received.
+[2025-05-12 08:09:25Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/deploy.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v3",
+        "repositoryType": "GitHub"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 13,
+        "col": 13,
+        "lit": "Checkout code"
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 16,
+        "col": 13,
+        "lit": "Set up Docker to use Minikube's environment"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 18,
+              "col": 12,
+              "lit": "& minikube -p minikube docker-env --shell=cmd | Invoke-Expression\n"
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 17,
+              "col": 14,
+              "lit": "powershell"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "9b71f5c6-f567-45d1-b1c0-9d5557dd9959",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 21,
+        "col": 13,
+        "lit": "Build frontend Docker image"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 22,
+              "col": 12,
+              "lit": "docker build -t ***/frontend:latest ./inotebook"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "b981cd7c-22a4-43bc-9625-9a09e0d53007",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 24,
+        "col": 13,
+        "lit": "Build backend Docker image"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 25,
+              "col": 12,
+              "lit": "docker build -t ***/backend:latest ./inotebook-backend"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "e63c7abf-6c0a-43bb-96e7-49d3d1e2d170",
+      "name": "__run_3"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 27,
+        "col": 13,
+        "lit": "Push images to Docker Hub"
+      },
+      "contextName": "__run_4",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 28,
+              "col": 12,
+              "expr": "format('echo \"{0}\" | docker login -u \"{1}\" --password-stdin\ndocker push ***/frontend:latest\ndocker push ***/backend:latest\n', secrets.DOCKER_PASSWORD, secrets.DOCKER_USERNAME)"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "9bf67a02-af9f-46e6-8e90-6ae9353e5728",
+      "name": "__run_4"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 33,
+        "col": 13,
+        "lit": "Deploy to Minikube"
+      },
+      "contextName": "__run_5",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 34,
+              "col": 12,
+              "lit": "kubectl apply -f frontend-deployment.yaml\nkubectl apply -f frontend-service.yaml\nkubectl apply -f deployment.yaml       # this is your backend-deployment.yaml\nkubectl apply -f service.yaml          # this is your backend-service.yaml\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "c6fc9753-74ae-4b73-a827-ff6bef4e0906",
+      "name": "__run_5"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DOCKER_PASSWORD": {
+      "value": "***",
+      "isSecret": true
+    },
+    "DOCKER_USERNAME": {
+      "value": "***",
+      "isSecret": true
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "false"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "build-deploy"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "22959021-d59f-4428-a009-6ef88c084a18.build-deploy.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "build-deploy"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "22959021-d59f-4428-a009-6ef88c084a18",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "22959021-d59f-4428-a009-6ef88c084a18",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "c505a6ea-b9e8-5acd-b760-b7d431c3c2a9",
+  "jobDisplayName": "build-deploy",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://acghubeus1.actions.githubusercontent.com/QdIbUorw0iCzRRmejOnyK3PHf7VSu7tQu37g2h1LTM2mY51Jc4/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus8.actions.githubusercontent.com/QdIbUorw0iCzRRmejOnyK3PHf7VSu7tQu37g2h1LTM2mY51Jc4/",
+          "GenerateIdTokenUrl": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-2-azure-eastus.actions.githubusercontent.com/87/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "5176578a7a449f878ef6fbf4715ba49c6ce01fb0"
+        },
+        {
+          "k": "repository",
+          "v": "ahsan1011664/SCD-PROJECT"
+        },
+        {
+          "k": "repository_owner",
+          "v": "ahsan1011664"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "181734495"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/ahsan1011664/SCD-PROJECT.git"
+        },
+        {
+          "k": "run_id",
+          "v": "14967106388"
+        },
+        {
+          "k": "run_number",
+          "v": "2"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "181734495"
+        },
+        {
+          "k": "actor",
+          "v": "ahsan1011664"
+        },
+        {
+          "k": "workflow",
+          "v": "Build and Deploy to Minikube"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "5176578a7a449f878ef6fbf4715ba49c6ce01fb0"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "371e64799a52ee5a0473c8de8e976f7cce18ce83"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "i222524@nu.edu.pk"
+                              },
+                              {
+                                "k": "name",
+                                "v": "AhsanIqbal"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Ahsaniqbal19"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "i222524@nu.edu.pk"
+                              },
+                              {
+                                "k": "name",
+                                "v": "AhsanIqbal"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Ahsaniqbal19"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "5176578a7a449f878ef6fbf4715ba49c6ce01fb0"
+                        },
+                        {
+                          "k": "message",
+                          "v": "Add GitHub Actions workflows-"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-05-12T13:09:12+05:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "d3cc13f6bfca7f11acfc26c6a0ab187ce167abe3"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/ahsan1011664/SCD-PROJECT/commit/5176578a7a449f878ef6fbf4715ba49c6ce01fb0"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/ahsan1011664/SCD-PROJECT/compare/371e64799a52...5176578a7a44"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "i222524@nu.edu.pk"
+                          },
+                          {
+                            "k": "name",
+                            "v": "AhsanIqbal"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Ahsaniqbal19"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "i222524@nu.edu.pk"
+                          },
+                          {
+                            "k": "name",
+                            "v": "AhsanIqbal"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Ahsaniqbal19"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "5176578a7a449f878ef6fbf4715ba49c6ce01fb0"
+                    },
+                    {
+                      "k": "message",
+                      "v": "Add GitHub Actions workflows-"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-05-12T13:09:12+05:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "d3cc13f6bfca7f11acfc26c6a0ab187ce167abe3"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/ahsan1011664/SCD-PROJECT/commit/5176578a7a449f878ef6fbf4715ba49c6ce01fb0"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "ai7130299@gmail.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "ahsan1011664"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/ahsan1011664/SCD-PROJECT.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1746993687.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "ahsan1011664/SCD-PROJECT"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/ahsan1011664/SCD-PROJECT.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/ahsan1011664/SCD-PROJECT"
+                    },
+                    {
+                      "k": "id",
+                      "v": 981751361.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "SCD-PROJECT"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOOoRWQQ"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/181734495?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "ai7130299@gmail.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/ahsan1011664/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/ahsan1011664/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/ahsan1011664/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/ahsan1011664/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/ahsan1011664"
+                          },
+                          {
+                            "k": "id",
+                            "v": 181734495.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "ahsan1011664"
+                          },
+                          {
+                            "k": "name",
+                            "v": "ahsan1011664"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOCtUMXw"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/ahsan1011664/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/ahsan1011664/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/ahsan1011664/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/ahsan1011664/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/ahsan1011664/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/ahsan1011664"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1747037361.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 316.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:ahsan1011664/SCD-PROJECT.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/ahsan1011664/SCD-PROJECT"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-05-12T08:01:30Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/ahsan1011664/SCD-PROJECT"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/181734495?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/ahsan1011664/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/ahsan1011664/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/ahsan1011664/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/ahsan1011664/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/ahsan1011664"
+                    },
+                    {
+                      "k": "id",
+                      "v": 181734495.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "ahsan1011664"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOCtUMXw"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/ahsan1011664/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/ahsan1011664/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/ahsan1011664/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/ahsan1011664/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/ahsan1011664/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/ahsan1011664"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "ahsan1011664/SCD-PROJECT/.github/workflows/deploy.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "5176578a7a449f878ef6fbf4715ba49c6ce01fb0"
+        },
+        {
+          "k": "repository_id",
+          "v": "981751361"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "ahsan1011664"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOCtUMXw"
+}
+[2025-05-12 08:09:25Z INFO JobRunner] Job ID c505a6ea-b9e8-5acd-b760-b7d431c3c2a9
+[2025-05-12 08:09:25Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin\Runner.Worker.dll
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO ConfigurationStore] binPath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO ConfigurationStore] RootFolder: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known config file 'Runner': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner'
+[2025-05-12 08:09:25Z INFO ConfigurationStore] ConfigFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner_migrated'
+[2025-05-12 08:09:25Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner_migrated
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials'
+[2025-05-12 08:09:25Z INFO ConfigurationStore] CredFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_migrated'
+[2025-05-12 08:09:25Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_migrated
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known config file 'Service': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.service'
+[2025-05-12 08:09:25Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.service
+[2025-05-12 08:09:25Z INFO ConfigurationStore] Read setting file: 313 chars
+[2025-05-12 08:09:25Z INFO JobRunner] Initializing launch client
+[2025-05-12 08:09:25Z INFO JobServerQueue] Initializing results client
+[2025-05-12 08:09:25Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-05-12 08:09:25Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-05-12 08:09:25Z INFO JobServerQueue] Start process web console line queue.
+[2025-05-12 08:09:25Z INFO JobServerQueue] Start process file upload queue.
+[2025-05-12 08:09:25Z INFO JobServerQueue] Start results file upload queue.
+[2025-05-12 08:09:25Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-05-12 08:09:25Z INFO JobServerQueue] Start process timeline update queue.
+[2025-05-12 08:09:25Z INFO ExecutionContext] Initialize GitHub context
+[2025-05-12 08:09:25Z INFO ExecutionContext] Initialize Env context
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:25Z INFO JobRunner] Starting the job execution context.
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:25Z INFO JobRunner] Validating directory permissions for: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Tools': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_tool'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Temp': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp'
+[2025-05-12 08:09:25Z INFO JobRunner] Getting job extension.
+[2025-05-12 08:09:25Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known config file 'SetupInfo': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.setup_info'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:25Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_PipelineMapping\ahsan1011664/SCD-PROJECT\PipelineFolder.json
+[2025-05-12 08:09:25Z INFO PipelineDirectoryManager] Updating job run properties.
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:25Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:26Z INFO JobExtension] Downloading actions
+[2025-05-12 08:09:26Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:26Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:26Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:26Z INFO HostContext] Well known directory 'Actions': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions'
+[2025-05-12 08:09:26Z INFO Worker] Listening for cancel message from the channel.
+[2025-05-12 08:09:26Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-05-12 08:09:26Z INFO ResultServer] Successfully started websocket client.
+[2025-05-12 08:09:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0dd2d2f1-db6d-4c1e-a9ec-3fecb552a44d', success rate: 1/1.
+[2025-05-12 08:09:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0dd2d2f1-db6d-4c1e-a9ec-3fecb552a44d', success rate: 1/1.
+[2025-05-12 08:09:27Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-05-12 08:09:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:27Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:27Z INFO HostContext] Well known directory 'Actions': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions'
+[2025-05-12 08:09:27Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:27Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:27Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:27Z INFO HostContext] Well known directory 'Actions': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions'
+[2025-05-12 08:09:27Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/f43a0e5ff2bd294095638e18286ca9a3d1956744' into C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions\_temp_8da6a3c9-4c4e-4add-a9dd-39893842f7fd\a79b9e38-0c15-457c-b243-939ba204c554.zip.
+[2025-05-12 08:09:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0dd2d2f1-db6d-4c1e-a9ec-3fecb552a44d', success rate: 1/1.
+[2025-05-12 08:09:28Z INFO ActionManager] Request URL: https://api.github.com/repos/actions/checkout/zipball/f43a0e5ff2bd294095638e18286ca9a3d1956744 X-GitHub-Request-Id: D835:2280B9:2C659:1E6177:6821ACBB Http Status: OK
+[2025-05-12 08:09:30Z INFO ActionManager] Finished getting action repository.
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Actions': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions'
+[2025-05-12 08:09:30Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Actions': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions'
+[2025-05-12 08:09:30Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-05-12 08:09:30Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Actions': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions'
+[2025-05-12 08:09:30Z INFO ActionManager] Load action that reference repository from 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Actions': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions'
+[2025-05-12 08:09:30Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-05-12 08:09:30Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-05-12 08:09:30Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-05-12 08:09:30Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-05-12 08:09:30Z INFO JobExtension] Adding .
+[2025-05-12 08:09:30Z INFO JobExtension] Adding .
+[2025-05-12 08:09:30Z INFO JobExtension] Adding .
+[2025-05-12 08:09:30Z INFO JobExtension] Adding .
+[2025-05-12 08:09:30Z INFO JobExtension] Adding .
+[2025-05-12 08:09:30Z INFO JobExtension] Adding .
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:30Z INFO JobExtension] Total accessible running process: 293.
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:30Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:30Z INFO JobExtension] Start checking service connectivity in background.
+[2025-05-12 08:09:30Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "0dd2d2f1-db6d-4c1e-a9ec-3fecb552a44d",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 6,
+  "startTime": "2025-05-12T08:09:25.7334085Z",
+  "finishTime": "2025-05-12T08:09:30.9667977Z"
+}.
+[2025-05-12 08:09:31Z INFO JobRunner] Total job steps: 6.
+[2025-05-12 08:09:31Z INFO JobRunner] Run all job steps.
+[2025-05-12 08:09:31Z INFO StepsRunner] Processing step: DisplayName='Checkout code'
+[2025-05-12 08:09:31Z INFO StepsRunner] Evaluating: success()
+[2025-05-12 08:09:31Z INFO StepsRunner] Result: true
+[2025-05-12 08:09:31Z INFO StepsRunner] Starting the step.
+[2025-05-12 08:09:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0dd2d2f1-db6d-4c1e-a9ec-3fecb552a44d', success rate: 1/1.
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:31Z INFO StepsRunner] Which2: 'chcp'
+[2025-05-12 08:09:31Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper] Process started with process id 19684, waiting for process exit.
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper] Finished process 19684 with exit code 0, and elapsed time 00:00:00.0959522.
+[2025-05-12 08:09:31Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Actions': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions'
+[2025-05-12 08:09:31Z INFO ActionManager] Load action that reference repository from 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Actions': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions'
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-05-12 08:09:31Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-05-12 08:09:31Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-05-12 08:09:31Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-05-12 08:09:31Z INFO ExecutionContext] Reserve record order 8 to 14 for post job actions.
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Temp': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp'
+[2025-05-12 08:09:31Z INFO ExecutionContext] Write event payload to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Temp': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp'
+[2025-05-12 08:09:31Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "ahsan1011664/SCD-PROJECT"
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-12 08:09:31Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-05-12 08:09:31Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command error
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command group
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-05-12 08:09:31Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:31Z INFO HostContext] Well known directory 'Externals': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals\node20\bin\node.exe'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions\actions\checkout\v3\dist/index.js"'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\SCD-PROJECT\SCD-PROJECT'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-12 08:09:31Z INFO ProcessInvokerWrapper] Process started with process id 15752, waiting for process exit.
+[2025-05-12 08:09:31Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:31Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-12 08:09:31Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-05-12 08:09:31Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag\blocks\22959021-d59f-4428-a009-6ef88c084a18_0dd2d2f1-db6d-4c1e-a9ec-3fecb552a44d.1
+[2025-05-12 08:09:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:33Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:34Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2025-05-12 08:09:34Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-05-12 08:09:34Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:35Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:38Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:39Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:40Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:40Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:40Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:43Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:45Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper] Finished process 15752 with exit code 0, and elapsed time 00:00:14.9378687.
+[2025-05-12 08:09:46Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp\_runner_file_commands\step_summary_9789ca7f-154e-4a15-a7b3-317ade990dfe) is empty; skipping attachment upload
+[2025-05-12 08:09:46Z INFO StepsRunner] Step result: 
+[2025-05-12 08:09:46Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Main",
+  "stepId": "05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 16,
+  "startTime": "2025-05-12T08:09:31.0303552Z",
+  "finishTime": "2025-05-12T08:09:46.4112084Z"
+}.
+[2025-05-12 08:09:46Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-05-12 08:09:46Z INFO StepsRunner] Current state: job state = ''
+[2025-05-12 08:09:46Z INFO StepsRunner] Processing step: DisplayName='Set up Docker to use Minikube's environment'
+[2025-05-12 08:09:46Z INFO StepsRunner] Evaluating: success()
+[2025-05-12 08:09:46Z INFO StepsRunner] Result: true
+[2025-05-12 08:09:46Z INFO StepsRunner] Starting the step.
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:46Z INFO StepsRunner] Which2: 'chcp'
+[2025-05-12 08:09:46Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-12 08:09:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a', success rate: 1/1.
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper] Process started with process id 4808, waiting for process exit.
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper] Finished process 4808 with exit code 0, and elapsed time 00:00:00.0622356.
+[2025-05-12 08:09:46Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Temp': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp'
+[2025-05-12 08:09:46Z INFO ExecutionContext] Write event payload to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Temp': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp'
+[2025-05-12 08:09:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-05-12 08:09:46Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command error
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command group
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-05-12 08:09:46Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-05-12 08:09:46Z INFO ScriptHandler] Which2: 'powershell'
+[2025-05-12 08:09:46Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:46Z INFO HostContext] Well known directory 'Temp': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp'
+[2025-05-12 08:09:46Z INFO ScriptHandler] Which2: 'powershell'
+[2025-05-12 08:09:46Z INFO ScriptHandler] Location: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp\dec1deca-5367-4192-8a83-2b5c488e73da.ps1'"'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\SCD-PROJECT\SCD-PROJECT'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-12 08:09:46Z INFO ProcessInvokerWrapper] Process started with process id 16732, waiting for process exit.
+[2025-05-12 08:09:46Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9b71f5c6-f567-45d1-b1c0-9d5557dd9959', success rate: 1/1.
+[2025-05-12 08:09:47Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-12 08:09:47Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag\blocks\22959021-d59f-4428-a009-6ef88c084a18_05f4c3b6-1070-4ff8-a07d-ddb2b3ca7f0a.1
+[2025-05-12 08:09:47Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-05-12 08:09:47Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper] Finished process 16732 with exit code 1, and elapsed time 00:00:02.9836063.
+[2025-05-12 08:09:49Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp\_runner_file_commands\step_summary_8b0f0cd4-7b73-4e6c-b6f0-70bd1ea9e4e3) is empty; skipping attachment upload
+[2025-05-12 08:09:49Z INFO StepsRunner] Step result: Failed
+[2025-05-12 08:09:49Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "9b71f5c6-f567-45d1-b1c0-9d5557dd9959",
+  "stepContextName": "__run",
+  "result": "failed",
+  "errorMessages": [
+    "Process completed with exit code 1."
+  ],
+  "executionTimeInSeconds": 4,
+  "startTime": "2025-05-12T08:09:46.4139205Z",
+  "finishTime": "2025-05-12T08:09:49.5320336Z"
+}.
+[2025-05-12 08:09:49Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2025-05-12 08:09:49Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-05-12 08:09:49Z INFO StepsRunner] Processing step: DisplayName='Build frontend Docker image'
+[2025-05-12 08:09:49Z INFO StepsRunner] Evaluating: success()
+[2025-05-12 08:09:49Z INFO StepsRunner] Result: false
+[2025-05-12 08:09:49Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-05-12 08:09:49Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-05-12 08:09:49Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-05-12 08:09:49Z INFO StepsRunner] Processing step: DisplayName='Build backend Docker image'
+[2025-05-12 08:09:49Z INFO StepsRunner] Evaluating: success()
+[2025-05-12 08:09:49Z INFO StepsRunner] Result: false
+[2025-05-12 08:09:49Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-05-12 08:09:49Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-05-12 08:09:49Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-05-12 08:09:49Z INFO StepsRunner] Processing step: DisplayName='Push images to Docker Hub'
+[2025-05-12 08:09:49Z INFO StepsRunner] Evaluating: success()
+[2025-05-12 08:09:49Z INFO StepsRunner] Result: false
+[2025-05-12 08:09:49Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-05-12 08:09:49Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-05-12 08:09:49Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-05-12 08:09:49Z INFO StepsRunner] Processing step: DisplayName='Deploy to Minikube'
+[2025-05-12 08:09:49Z INFO StepsRunner] Evaluating: success()
+[2025-05-12 08:09:49Z INFO StepsRunner] Result: false
+[2025-05-12 08:09:49Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2025-05-12 08:09:49Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2025-05-12 08:09:49Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-05-12 08:09:49Z INFO StepsRunner] Processing step: DisplayName='Post Checkout code'
+[2025-05-12 08:09:49Z INFO StepsRunner] Evaluating: always()
+[2025-05-12 08:09:49Z INFO StepsRunner] Result: true
+[2025-05-12 08:09:49Z INFO StepsRunner] Starting the step.
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:49Z INFO StepsRunner] Which2: 'chcp'
+[2025-05-12 08:09:49Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper] Process started with process id 17952, waiting for process exit.
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper] Finished process 17952 with exit code 0, and elapsed time 00:00:00.0236704.
+[2025-05-12 08:09:49Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Actions': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions'
+[2025-05-12 08:09:49Z INFO ActionManager] Load action that reference repository from 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions\actions\checkout\v3'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Actions': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions'
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "sparse-checkout"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 60,
+          "col": 14,
+          "lit": ""
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 3,
+          "lit": "sparse-checkout-cone-mode"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 64,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 65,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 67,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 68,
+          "col": 3,
+          "lit": "fetch-tags"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 82,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 83,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 85,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 86,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2025-05-12 08:09:49Z INFO ActionManager] Action pre node.js file: N/A.
+[2025-05-12 08:09:49Z INFO ActionManager] Action node.js file: dist/index.js.
+[2025-05-12 08:09:49Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Temp': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp'
+[2025-05-12 08:09:49Z INFO ExecutionContext] Write event payload to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp\_github_workflow\event.json
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Temp': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp'
+[2025-05-12 08:09:49Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "ahsan1011664/SCD-PROJECT"
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'sparse-checkout': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 60,
+  "col": 14,
+  "lit": ""
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'sparse-checkout-cone-mode': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 64,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 67,
+  "col": 14,
+  "lit": "1"
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'fetch-tags': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 82,
+  "col": 14,
+  "lit": "false"
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 85,
+  "col": 14,
+  "lit": "true"
+}
+[2025-05-12 08:09:49Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2025-05-12 08:09:49Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command set-env
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command set-output
+[2025-05-12 08:09:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9b71f5c6-f567-45d1-b1c0-9d5557dd9959', success rate: 1/1.
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command save-state
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command add-path
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command warning
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command error
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command notice
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command debug
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command group
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2025-05-12 08:09:49Z INFO ActionCommandManager] Register action command extension for command echo
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:49Z INFO HostContext] Well known directory 'Externals': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals\node20\bin\node.exe'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_actions\actions\checkout\v3\dist/index.js"'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\SCD-PROJECT\SCD-PROJECT'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-12 08:09:49Z INFO ProcessInvokerWrapper] Process started with process id 12224, waiting for process exit.
+[2025-05-12 08:09:49Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-12 08:09:49Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag\blocks\22959021-d59f-4428-a009-6ef88c084a18_9b71f5c6-f567-45d1-b1c0-9d5557dd9959.1
+[2025-05-12 08:09:49Z INFO JobServerQueue] Try to append 1 batches web console lines for record '679ae08b-5732-47e7-87e0-e14de080c9d9', success rate: 1/1.
+[2025-05-12 08:09:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '679ae08b-5732-47e7-87e0-e14de080c9d9', success rate: 1/1.
+[2025-05-12 08:09:50Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2025-05-12 08:09:50Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2025-05-12 08:09:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '679ae08b-5732-47e7-87e0-e14de080c9d9', success rate: 1/1.
+[2025-05-12 08:09:50Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2025-05-12 08:09:50Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:50Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:50Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 08:09:51Z INFO JobServerQueue] Try to append 1 batches web console lines for record '679ae08b-5732-47e7-87e0-e14de080c9d9', success rate: 1/1.
+[2025-05-12 08:09:52Z INFO JobServerQueue] Try to append 1 batches web console lines for record '679ae08b-5732-47e7-87e0-e14de080c9d9', success rate: 1/1.
+[2025-05-12 08:09:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:53Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 08:09:53Z INFO ProcessInvokerWrapper] Finished process 12224 with exit code 0, and elapsed time 00:00:03.9741326.
+[2025-05-12 08:09:53Z INFO CreateStepSummaryCommand] Step Summary file (C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp\_runner_file_commands\step_summary_38c053c6-6ee1-4e3b-8db7-84bb76ae6d7b) is empty; skipping attachment upload
+[2025-05-12 08:09:53Z INFO StepsRunner] Step result: 
+[2025-05-12 08:09:53Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node20",
+  "stage": "Post",
+  "stepId": "679ae08b-5732-47e7-87e0-e14de080c9d9",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 5,
+  "startTime": "2025-05-12T08:09:49.5444134Z",
+  "finishTime": "2025-05-12T08:09:53.59148Z"
+}.
+[2025-05-12 08:09:53Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2025-05-12 08:09:53Z INFO StepsRunner] Current state: job state = 'Failed'
+[2025-05-12 08:09:53Z INFO JobRunner] Finalize job.
+[2025-05-12 08:09:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:53Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:53Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:53Z INFO JobExtension] Initialize Env context
+[2025-05-12 08:09:53Z INFO JobExtension] Initialize steps context
+[2025-05-12 08:09:53Z INFO JobExtension] Total accessible running process: 294.
+[2025-05-12 08:09:53Z INFO JobExtension] Inspecting process environment variables. PID: 1160 (chrome)
+[2025-05-12 08:09:53Z INFO JobExtension] Inspecting process environment variables. PID: 19144 (chrome)
+[2025-05-12 08:09:53Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "bf3470df-c373-4919-97a9-e8a404cc6855",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-05-12T08:09:53.6099724Z",
+  "finishTime": "2025-05-12T08:09:53.681795Z"
+}.
+[2025-05-12 08:09:53Z INFO JobRunner] Job result after all job steps finish: Failed
+[2025-05-12 08:09:53Z INFO JobRunner] Completing the job execution context.
+[2025-05-12 08:09:53Z INFO JobRunner] Shutting down the job server queue.
+[2025-05-12 08:09:53Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-05-12 08:09:54Z INFO JobServerQueue] All queue process task stopped.
+[2025-05-12 08:09:54Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'bf3470df-c373-4919-97a9-e8a404cc6855', success rate: 1/1.
+[2025-05-12 08:09:54Z INFO JobServerQueue] Web console line queue drained.
+[2025-05-12 08:09:54Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2025-05-12 08:09:54Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2025-05-12 08:09:54Z INFO JobServerQueue] File upload queue drained.
+[2025-05-12 08:09:54Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-05-12 08:09:54Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2025-05-12 08:09:54Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-12 08:09:54Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag\blocks\22959021-d59f-4428-a009-6ef88c084a18_679ae08b-5732-47e7-87e0-e14de080c9d9.1
+[2025-05-12 08:09:55Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-12 08:09:55Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag\blocks\22959021-d59f-4428-a009-6ef88c084a18_bf3470df-c373-4919-97a9-e8a404cc6855.1
+[2025-05-12 08:09:56Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-05-12 08:09:56Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag\blocks\22959021-d59f-4428-a009-6ef88c084a18_c505a6ea-b9e8-5acd-b760-b7d431c3c2a9.1
+[2025-05-12 08:09:57Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2025-05-12 08:09:57Z INFO JobServerQueue] Results upload queue drained.
+[2025-05-12 08:09:57Z INFO JobServerQueue] Timeline update queue drained.
+[2025-05-12 08:09:57Z INFO JobServerQueue] Disposing job server ...
+[2025-05-12 08:09:57Z INFO JobServerQueue] Disposing results server ...
+[2025-05-12 08:09:57Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-05-12 08:09:57Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_temp
+[2025-05-12 08:09:57Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 08:09:57Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 08:09:57Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 08:09:57Z INFO HostContext] Well known config file 'Telemetry': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag\.telemetry'
+[2025-05-12 08:09:57Z INFO JobRunner] Raising job completed against run service
+[2025-05-12 08:09:58Z INFO Worker] Job completed.

@@ -1,0 +1,271 @@
+[2025-05-12 07:35:41Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:41Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials'
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:41Z INFO HostContext] Well known config file 'Runner': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner'
+[2025-05-12 07:35:41Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-05-12 07:35:41Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.22000.
+[2025-05-12 07:35:41Z INFO Listener] Version: 2.311.0
+[2025-05-12 07:35:41Z INFO Listener] Commit: f5cff308c83746dddd726a9a28a1583872305aaa
+[2025-05-12 07:35:41Z INFO Listener] Culture: en-US
+[2025-05-12 07:35:41Z INFO Listener] UI Culture: en-US
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:41Z INFO Listener] Validating directory permissions for: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:41Z INFO CommandLineParser] Parse
+[2025-05-12 07:35:41Z INFO CommandLineParser] Parsing 1 args
+[2025-05-12 07:35:41Z INFO CommandLineParser] parsing argument
+[2025-05-12 07:35:41Z INFO CommandLineParser] HasArgs: False
+[2025-05-12 07:35:41Z INFO CommandLineParser] Adding Command: run
+[2025-05-12 07:35:41Z INFO Listener] Arguments parsed
+[2025-05-12 07:35:41Z INFO Runner] ExecuteCommand
+[2025-05-12 07:35:41Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin\Runner.Listener.dll
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:41Z INFO ConfigurationStore] binPath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:41Z INFO ConfigurationStore] RootFolder: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:41Z INFO HostContext] Well known config file 'Runner': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner'
+[2025-05-12 07:35:41Z INFO ConfigurationStore] ConfigFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.runner
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:41Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials'
+[2025-05-12 07:35:41Z INFO ConfigurationStore] CredFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:41Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_migrated'
+[2025-05-12 07:35:41Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_migrated
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:41Z INFO HostContext] Well known config file 'Service': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.service'
+[2025-05-12 07:35:41Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.service
+[2025-05-12 07:35:41Z INFO CommandSettings] Flag 'help': 'False'
+[2025-05-12 07:35:41Z INFO CommandSettings] Flag 'version': 'False'
+[2025-05-12 07:35:41Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-05-12 07:35:41Z INFO CommandSettings] Flag 'check': 'False'
+[2025-05-12 07:35:41Z INFO CommandSettings] Command 'configure': 'False'
+[2025-05-12 07:35:41Z INFO CommandSettings] Command 'remove': 'False'
+[2025-05-12 07:35:41Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-05-12 07:35:41Z INFO ConfigurationManager] LoadSettings
+[2025-05-12 07:35:41Z INFO ConfigurationStore] IsConfigured()
+[2025-05-12 07:35:41Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-12 07:35:41Z INFO ConfigurationManager] Is configured: True
+[2025-05-12 07:35:41Z INFO ConfigurationStore] Read setting file: 313 chars
+[2025-05-12 07:35:41Z INFO ConfigurationManager] Settings Loaded
+[2025-05-12 07:35:41Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-05-12 07:35:41Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-05-12 07:35:41Z INFO CommandSettings] Command 'run': 'True'
+[2025-05-12 07:35:41Z INFO ConfigurationStore] IsConfigured()
+[2025-05-12 07:35:41Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-12 07:35:41Z INFO ConfigurationManager] Is configured: True
+[2025-05-12 07:35:41Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-05-12 07:35:41Z INFO Runner] Set runner startup type - Manual
+[2025-05-12 07:35:41Z INFO CommandSettings] Flag 'once': 'False'
+[2025-05-12 07:35:41Z INFO CommandSettings] Flag 'once': 'False'
+[2025-05-12 07:35:41Z INFO Runner] RunAsync
+[2025-05-12 07:35:41Z INFO ConfigurationManager] LoadSettings
+[2025-05-12 07:35:41Z INFO ConfigurationStore] IsConfigured()
+[2025-05-12 07:35:41Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-12 07:35:41Z INFO ConfigurationManager] Is configured: True
+[2025-05-12 07:35:41Z INFO ConfigurationManager] Settings Loaded
+[2025-05-12 07:35:41Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "DESKTOP-52ROIOA",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus8.actions.githubusercontent.com/QdIbUorw0iCzRRmejOnyK3PHf7VSu7tQu37g2h1LTM2mY51Jc4/",
+  "GitHubUrl": "https://github.com/ahsan1011664/SCD-PROJECT",
+  "WorkFolder": "_work"
+}
+[2025-05-12 07:35:41Z INFO MessageListener] Loading Credentials
+[2025-05-12 07:35:41Z INFO ConfigurationStore] HasCredentials()
+[2025-05-12 07:35:41Z INFO ConfigurationStore] stored True
+[2025-05-12 07:35:41Z INFO CredentialManager] GetCredentialProvider
+[2025-05-12 07:35:41Z INFO CredentialManager] Creating type OAuth
+[2025-05-12 07:35:41Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:41Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:41Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams'
+[2025-05-12 07:35:41Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 07:35:41Z INFO MessageListener] Attempt to create session.
+[2025-05-12 07:35:41Z INFO MessageListener] Connecting to the Runner Server...
+[2025-05-12 07:35:41Z INFO RunnerServer] EstablishVssConnection
+[2025-05-12 07:35:41Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-05-12 07:35:41Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-12 07:35:42Z INFO RunnerServer] EstablishVssConnection
+[2025-05-12 07:35:42Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-05-12 07:35:42Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-12 07:35:42Z INFO RunnerServer] EstablishVssConnection
+[2025-05-12 07:35:42Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-05-12 07:35:42Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-12 07:35:43Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-12 07:35:43Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-12 07:35:43Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-12 07:35:43Z INFO MessageListener] VssConnection created
+[2025-05-12 07:35:43Z INFO Terminal] WRITE LINE: 
+[2025-05-12 07:35:43Z INFO Terminal] WRITE LINE: 
+[2025-05-12 07:35:43Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 07:35:43Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 07:35:44Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-12 07:35:45Z INFO MessageListener] Session created.
+[2025-05-12 07:35:45Z INFO Terminal] WRITE LINE: Current runner version: '2.311.0'
+[2025-05-12 07:35:45Z INFO Terminal] WRITE LINE: 2025-05-12 07:35:45Z: Listening for Jobs
+[2025-05-12 07:35:45Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-05-12 07:35:46Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\.credentials_rsaparams
+[2025-05-12 07:35:46Z INFO MessageListener] Message '1' received from session '11a70cdb-acc5-4343-b126-906755a2ed06'.
+[2025-05-12 07:35:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 07:35:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:46Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:46Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 07:35:46Z INFO SelfUpdater] Cloning dotnet runtime to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\__dotnet_runtime__
+[2025-05-12 07:35:46Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:47Z INFO SelfUpdater] Successfully cloned dotnet runtime to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\__dotnet_runtime__. Total files: 222
+[2025-05-12 07:35:47Z INFO SelfUpdater] Cloning externals to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\__externals__
+[2025-05-12 07:35:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:47Z INFO HostContext] Well known directory 'Externals': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals'
+[2025-05-12 07:35:47Z INFO SelfUpdater] Successfully cloned externals to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\__externals__.
+[2025-05-12 07:35:47Z INFO SelfUpdater] Waiting for 2 tasks to complete.
+[2025-05-12 07:35:47Z INFO SelfUpdater] Externals clone finished.
+[2025-05-12 07:35:47Z INFO SelfUpdater] Calculating hash for C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\__externals__
+[2025-05-12 07:35:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:47Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:47Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:47Z INFO HostContext] Well known directory 'Externals': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals'
+[2025-05-12 07:35:47Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-12 07:35:47Z INFO ProcessInvokerWrapper]   File name: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals\node16\bin\node.exe'
+[2025-05-12 07:35:47Z INFO ProcessInvokerWrapper]   Arguments: '"C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin\hashFiles"'
+[2025-05-12 07:35:47Z INFO ProcessInvokerWrapper]   Working directory: 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\__externals__'
+[2025-05-12 07:35:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-12 07:35:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-12 07:35:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-12 07:35:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-12 07:35:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-12 07:35:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-12 07:35:47Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2025-05-12 07:35:51Z INFO ProcessInvokerWrapper] Process started with process id 11320, waiting for process exit.
+[2025-05-12 07:35:51Z INFO Runner] Refresh message received, kick-off selfupdate background process.
+[2025-05-12 07:35:52Z INFO SelfUpdater] Version '2.323.0' of 'agent' package available in server.
+[2025-05-12 07:35:52Z INFO SelfUpdater] Current running runner version is 2.311.0
+[2025-05-12 07:35:52Z INFO SelfUpdater] An update is available.
+[2025-05-12 07:35:52Z INFO Terminal] WRITE LINE: Runner update in progress, do not shutdown runner.
+[2025-05-12 07:35:52Z INFO SelfUpdater] CloneDotnetRuntimeTime: 891ms
+[2025-05-12 07:35:52Z INFO SelfUpdater] CloneExternalsTime: 194ms
+[2025-05-12 07:35:52Z INFO SelfUpdater] RunnerPlatform: win-x64
+[2025-05-12 07:35:52Z INFO Terminal] WRITE LINE: Downloading 2.323.0 runner
+[2025-05-12 07:35:53Z INFO ProcessInvokerWrapper] Kill entire process tree since both cancel and terminate signal has been ignored by the target process.
+[2025-05-12 07:35:53Z INFO ProcessInvokerWrapper] Scan all processes to find relationship between all processes.
+[2025-05-12 07:35:54Z INFO ProcessInvokerWrapper] Find all child processes of process '11320'.
+[2025-05-12 07:35:54Z INFO ProcessInvokerWrapper] Need kill all child processes trees before kill process '11320'.
+[2025-05-12 07:35:54Z INFO ProcessInvokerWrapper] Child process '5236' needs be killed first.
+[2025-05-12 07:35:54Z INFO ProcessInvokerWrapper] Find all child processes of process '5236'.
+[2025-05-12 07:35:54Z INFO ProcessInvokerWrapper] Kill process '5236'.
+[2025-05-12 07:35:54Z INFO ProcessInvokerWrapper] Kill process '11320'.
+[2025-05-12 07:35:54Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 07:35:54Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-12 07:35:54Z INFO ProcessInvokerWrapper] Process Cancellation finished.
+[2025-05-12 07:35:54Z INFO ProcessInvokerWrapper] Finished process 11320 with exit code -1, and elapsed time 00:00:06.2798439.
+[2025-05-12 07:35:54Z ERR  SelfUpdater] Fail to hash externals content: System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at GitHub.Runner.Sdk.ProcessInvoker.ExecuteAsync(String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Channel`1 redirectStandardIn, Boolean inheritConsoleHandler, Boolean keepStandardInOpen, Boolean highPriorityProcess, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.ProcessInvokerWrapper.ExecuteAsync(String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Channel`1 redirectStandardIn, Boolean inheritConsoleHandler, Boolean keepStandardInOpen, Boolean highPriorityProcess, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.SelfUpdater.HashFiles(String fileFolder, CancellationToken token)
+   at GitHub.Runner.Listener.SelfUpdater.CloneAndCalculateAssetsHash(String dotnetRuntimeCloneDirectory, String externalsCloneDirectory, CancellationToken token)
+[2025-05-12 07:35:54Z INFO SelfUpdater] Still waiting for 1 tasks to complete.
+[2025-05-12 07:35:54Z INFO SelfUpdater] Waiting for 1 tasks to complete.
+[2025-05-12 07:35:54Z INFO SelfUpdater] Dotnet runtime clone finished.
+[2025-05-12 07:35:54Z ERR  SelfUpdater] Skip compute hash since clone dotnet runtime failed/cancelled.
+[2025-05-12 07:35:54Z INFO SelfUpdater] Still waiting for 0 tasks to complete.
+[2025-05-12 07:35:54Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:35:54Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:35:54Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 07:35:54Z INFO SelfUpdater] Attempt 1: save latest runner into C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_update\runner1.zip.
+[2025-05-12 07:35:54Z INFO SelfUpdater] Download runner: begin download
+[2025-05-12 07:35:54Z INFO SelfUpdater] Downloading https://github.com/actions/runner/releases/download/v2.323.0/actions-runner-win-x64-2.323.0.zip
+[2025-05-12 07:36:04Z INFO SelfUpdater] Download runner: finished download
+[2025-05-12 07:36:13Z INFO SelfUpdater] Validated Runner Hash matches C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_update\runner1.zip : e8ca92e3b1b907cdcc0c94640f4c5b23f377743993a4a5c859cb74f3e6eb33ef
+[2025-05-12 07:36:20Z INFO SelfUpdater] Finished getting latest runner package at: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_update.
+[2025-05-12 07:36:20Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:20Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:20Z INFO SelfUpdater] Copy C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_update\bin to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin.2.323.0.
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:21Z INFO SelfUpdater] Copy C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_update\externals to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\externals.2.323.0.
+[2025-05-12 07:36:21Z INFO SelfUpdater] Copy any remaining .sh/.cmd files into runner root.
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:21Z INFO SelfUpdater] Copy C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_update\config.cmd to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\config.cmd
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:21Z INFO SelfUpdater] Copy C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_update\run-helper.cmd.template to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\run-helper.cmd.template
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:21Z INFO SelfUpdater] Copy C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_update\run-helper.sh.template to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\run-helper.sh.template
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:21Z INFO SelfUpdater] Copy C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_update\run.cmd to C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\run.cmd
+[2025-05-12 07:36:21Z INFO SelfUpdater] Download latest runner and unzip into runner root.
+[2025-05-12 07:36:21Z INFO Terminal] WRITE LINE: Waiting for current job finish running.
+[2025-05-12 07:36:21Z INFO SelfUpdater] DownloadUrl: https://github.com/actions/runner/releases/download/v2.323.0/actions-runner-win-x64-2.323.0.zip
+[2025-05-12 07:36:21Z INFO SelfUpdater] RuntimeTrimmed: False
+[2025-05-12 07:36:21Z INFO SelfUpdater] ExternalsTrimmed: False
+[2025-05-12 07:36:21Z INFO SelfUpdater] PackageDownloadTime: 9908ms
+[2025-05-12 07:36:21Z INFO SelfUpdater] Attempts: 1
+[2025-05-12 07:36:21Z INFO SelfUpdater] PackageSize: 60MB
+[2025-05-12 07:36:21Z INFO SelfUpdater] ValidateHashTime: 8971ms
+[2025-05-12 07:36:21Z INFO SelfUpdater] PackageExtractTime: 7339ms
+[2025-05-12 07:36:21Z INFO SelfUpdater] CopyRunnerToRootTime: 803ms
+[2025-05-12 07:36:21Z INFO SelfUpdater] All running job has exited.
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:21Z INFO SelfUpdater] Delete old version runner backup.
+[2025-05-12 07:36:21Z INFO Terminal] WRITE LINE: Generate and execute update script.
+[2025-05-12 07:36:21Z INFO SelfUpdater] DeleteRunnerBackupTime: 11ms
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Diag': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_diag'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Bin': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\bin'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Root': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner'
+[2025-05-12 07:36:21Z INFO HostContext] Well known directory 'Work': 'C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work'
+[2025-05-12 07:36:21Z INFO SelfUpdater] Generate update script into: C:\Users\gj\Desktop\Semester6\SCD_Project\iNotebook-scd\actions-runner\_work\_update.cmd
+[2025-05-12 07:36:21Z INFO SelfUpdater] Which: 'cmd.exe'
+[2025-05-12 07:36:21Z INFO SelfUpdater] Location: 'C:\Windows\system32\cmd.exe'
+[2025-05-12 07:36:21Z INFO SelfUpdater] Update script start running
+[2025-05-12 07:36:21Z INFO Terminal] WRITE LINE: Runner will exit shortly for update, should be back online within 10 seconds.
+[2025-05-12 07:36:21Z INFO SelfUpdater] TotalUpdateTime: 35306ms
+[2025-05-12 07:36:22Z INFO Terminal] WRITE LINE: Runner update process finished.
+[2025-05-12 07:36:22Z INFO Runner] Auto update task finished at backend, an runner update is ready to apply exit the current runner instance.
+[2025-05-12 07:36:22Z INFO Runner] Stop message queue looping.
+[2025-05-12 07:36:22Z WARN GitHubActionsService] GET request to https://pipelinesghubeus8.actions.githubusercontent.com/QdIbUorw0iCzRRmejOnyK3PHf7VSu7tQu37g2h1LTM2mY51Jc4/_apis/distributedtask/pools/1/messages?sessionId=11a70cdb-acc5-4343-b126-906755a2ed06&lastMessageId=1&status=Online&runnerVersion=2.311.0&os=Windows&architecture=X64 has been cancelled.
+[2025-05-12 07:36:22Z INFO MessageListener] Get next message has been cancelled.
+[2025-05-12 07:36:22Z INFO Runner] Ignore any exception after cancel message loop. System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+   at GitHub.Runner.Listener.Runner.RunAsync(RunnerSettings settings, Boolean runOnce)
+[2025-05-12 07:36:22Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2025-05-12 07:36:23Z INFO Listener] Runner execution has finished with return code 3
