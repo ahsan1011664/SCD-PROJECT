@@ -1,0 +1,29 @@
+name: Build and Deploy to Minikube
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-deploy:
+    runs-on: self-hosted
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Docker to use Minikube's environment
+      run: eval $(minikube docker-env)
+
+    - name: Build Docker image
+      run: docker build -t aahs/frontend:latest ./inotebook
+
+    - name: Push Docker image to Docker Hub
+      run: |
+        echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+        docker push aahs/frontend:latest
+
+    - name: Deploy to Minikube
+      run: |
+        kubectl apply -f frontend-deployment.yaml
+        kubectl apply -f frontend-service.yaml
+        kubectl apply -f backend-deployment.yaml
+        kubectl apply -f backend-service.yaml
